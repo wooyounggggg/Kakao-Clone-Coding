@@ -7,7 +7,7 @@
   <script defer src="https://use.fontawesome.com/releases/v5.8.1/js/regular.js" integrity="sha384-Uc9toywOA44owltk1MWl0lQZ+L0mBzJkLQcdif6+JtG9izvok9DLJtCZX57Uq3k2" crossorigin="anonymous"></script>
   <script defer src="https://use.fontawesome.com/releases/v5.8.1/js/brands.js" integrity="sha384-rUOIFHM3HXni/WG5pzDhA1e2Js5nn4bWudTYujHbbI9ztBIxK54CL4ZNZWwcBQeD" crossorigin="anonymous"></script>
   <script defer src="https://use.fontawesome.com/releases/v5.8.1/js/fontawesome.js" integrity="sha384-EMmnH+Njn8umuoSMZ3Ae3bC9hDknHKOWL2e9WJD/cN6XLeAN7tr5ZQ0Hx5HDHtkS" crossorigin="anonymous"></script>
-  <title>Chats | Kakao Clone</title>
+  <title>Chat | Kakao Clone</title>
 </head>
 
 <body>
@@ -23,50 +23,61 @@
       <i class="fas fa-battery-full"></i>
     </div>
   </div>
+
   <header class="header">
     <div class="header__header-column">
-      <h1 class="header_title">Chats</h1>
+      <a href="index.html"><i class="fas fa-arrow-left fa-2x"></i></a>
+      <h1 class="header__title">Best Friend</h1>
+      <h1 class="header_title">Chat</h1>
     </div>
     <div class="header__header-column">
       <span class="header__icon">
         <i class="fas fa-search"></i>
       </span>
-      <span class="header__icon">
-        <i class="far fa-comment"></i>
-      </span>
-      <span class="header__icon">
-        <i class="fas fa-cog"></i>
-      </span>
+      <div class="header__icon">
+        <i class="fas fa-bars"></i>
+      </div>
     </div>
   </header>
-  <main class="chats">
-    <ul class="chats__list">
-      <li class="chats__chat chat">
-        <a href="chat.html">
-          <div class="chat__column">
-            <img src="images/avatar.jpg" alt="" class="chat__avatar g-avatar">
-            <div class="chat__content">
-              <span class="chat__username">
-              Lynn
-            </span>
-              <span class="chat__preview">  Going home!</span>
-            </div>
+  <main class="chat">
+    <ul class="chat__messages">
+      <span class="chat__tiestamp">Friday, January 11, 2019</span>
+      <li class="incoming-message message">
+        <img src="images/avatar.jpg" alt="" class="g-avatar message">
+        <div class="message__content">
+          <span class="message__author">Best Friend</span>
+          <div class="message__bubble">
+            Congrats I love you!!
           </div>
-          <div class="chat__column">
-            <span class="chat__timestamp">Yesterday</span>
+        </div>
+        <span class="message__timestamp"></span>
+      </li>
+      <li class="incoming-message message">
+        <span class="message__timestamp"></span>
+        <div class="message__content">
+          <div class="message__bubble">
+            Thank you see you soon!
           </div>
-        </a>
+        </div>
       </li>
     </ul>
   </main>
-  <nav class="nav">
-    <ul class="nav__list">
-      <li class="nav__list-item"><a href="friends.html" class="nav__list-link"><i class="far fa-user"></i></a></li>
-      <li class="nav__list-item"><a href="index.html" class="nav__list-link"><i class="fas fa-comment"></i></a></li>
-      <li class="nav__list-item"><a href="find.html" class="nav__list-link"><i class="fas fa-search"></i></a></li>
-      <li class="nav__list-item"><a href="more.html" class="nav__list-link"><i class="fas fa-ellipsis-h"></i></a></li>
-    </ul>
-  </nav>
+  <div class="chat__write">
+    <div class="chat__write-column">
+      <i class="fas fa-plus-square"></i>
+    </div>
+    <div class="chat__write-column">
+      <input type="text" placeholder="Send Message" class="chat__write-input">
+    </div>
+    <div class="chat__write-column">
+      <span class="chat__write-icon">
+        <i class="fas fa-smile-wink"></i>
+      </span>
+      <span class="chat__write-icon">
+        <i class="fas fa-microphone"></i>
+      </span>
+    </div>
+  </div>
 </body>
 
 </html>
