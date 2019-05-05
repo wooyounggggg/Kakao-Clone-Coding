@@ -2,7 +2,10 @@
 @import "header.css";
 @import "reset.css";
 @import "statusbar.css";
-
+@import "navigationbar.css";
+*{
+  box-sizing:border-box;
+}
 body{
   background-color:white;
   padding:10px 20px;
