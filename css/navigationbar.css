@@ -16,3 +16,23 @@
 .nav li{
   font-size:20px;
 }
+
+.nav .nav__list-link{
+  position:relative;
+  color:#070507;
+}
+
+.nav .nav__badge{
+  position:absolute;
+  top:-7px;;
+  right:-7px;;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  font-size:10px;
+  border-radius:50%;
+  color:white;
+  background-color:#dc5d46;
+  width:18px;
+  height:18px;
+}
