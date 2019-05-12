@@ -6,10 +6,12 @@
 @import "friend.css";
 @import "friends.css";
 @import "find.css";
+@import "more.css";
 
 *{
   box-sizing:border-box;
 }
+
 body{
   background-color:white;
   padding:10px 20px;
