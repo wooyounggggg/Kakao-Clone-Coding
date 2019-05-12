@@ -24,8 +24,8 @@
 
 .nav .nav__badge{
   position:absolute;
-  top:-7px;;
-  right:-7px;;
+  top:-7px;
+  right:-7px;
   display:flex;
   justify-content:center;
   align-items:center;
