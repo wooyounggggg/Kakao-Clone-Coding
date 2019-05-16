@@ -11,7 +11,7 @@
   <title>Chat | Kakao Clone</title>
 </head>
 
-<body>
+<body class="chats__body">
   <div class="status-bar">
     <div class="status-bar__column">
       <span class="status-bar__clock">13:53</span>
@@ -39,24 +39,42 @@
       </span>
     </div>
   </header>
-  <main class="chat">
+  <main class="chat-screen">
     <ul class="chat__messages">
-      <span class="chat__tiestamp">Friday, January 11, 2019</span>
+      <span class="chat__timestamp">Friday, January 11, 2019</span>
       <li class="incoming-message message">
         <img src="images/avatar.jpg" alt="" class="g-avatar message">
         <div class="message__content">
           <span class="message__author">Best Friend</span>
           <div class="message__bubble">
-            Congrats I love you!!
+            Hello~!
           </div>
         </div>
         <span class="message__timestamp"></span>
       </li>
-      <li class="incoming-message message">
+      <li class="sent-message message">
         <span class="message__timestamp"></span>
         <div class="message__content">
           <div class="message__bubble">
-            Thank you see you soon!
+            Hi!
+          </div>
+        </div>
+      </li>
+      <li class="incoming-message message">
+        <img src="images/avatar.jpg" alt="" class="g-avatar message">
+        <div class="message__content">
+          <span class="message__author">Best Friend</span>
+          <div class="message__bubble">
+            What are you doing now?
+          </div>
+        </div>
+        <span class="message__timestamp"></span>
+      </li>
+      <li class="sent-message message">
+        <span class="message__timestamp"></span>
+        <div class="message__content">
+          <div class="message__bubble">
+            I'm doing kakao-clone-coding!
           </div>
         </div>
       </li>
@@ -67,11 +85,11 @@
       <i class="fas fa-plus-square"></i>
     </div>
     <div class="chat__write-column">
-      <input type="text" placeholder="Send Message" class="chat__write-input">
+      <input type="text" placeholder="메시지를 입력하세요." class="chat__write-input">
     </div>
     <div class="chat__write-column">
       <span class="chat__write-icon">
-        <i class="fas fa-smile-wink"></i>
+        <i class="far fa-smile"></i>
       </span>
       <span class="chat__write-icon">
         <i class="fas fa-microphone"></i>
