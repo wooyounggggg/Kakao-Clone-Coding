@@ -36,3 +36,18 @@
   width:18px;
   height:18px;
 }
+
+@keyframes showNavBar{
+  from{
+    transform:translateY(80px);
+  }
+  to{
+    transform:none;
+  }  
+}
+
+.nav{
+  transform:translateY(80px);
+  animation:showNavBar .5s ease-out forwards;
+  animation-delay:.5s;
+}
